@@ -57,7 +57,7 @@ Since these projects are provided as **Jupyter Notebooks (`.ipynb`)**, you can r
 
 ---
 
-## 🛠️ Requirements
+## Requirements
 The following Python libraries are required to view the plots and run the analyses:
 
 ```bash
