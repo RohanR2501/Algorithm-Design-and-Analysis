@@ -16,7 +16,7 @@ This repository contains the implementation, empirical testing, and theoretical 
 ### Lab 1: Hybrid Sorting Algorithm
 This project implements a hybrid of Merge Sort and Insertion Sort. The algorithm switches to Insertion Sort when the subarray size is less than or equal to a threshold $S$.
 *   **Key Objective:** Determine the optimal $S$ that minimizes key comparisons and CPU time for input sizes up to 10 million.
-*   **Result:** Empirical results validate the $O(n \log n)$ complexity while showing significant real-world speedups on small subarrays due to lower overhead.
+*   **Result:** Empirical results are consistent with the $O(n \log n)$ complexity while showing significant real-world speedups on small subarrays due to lower overhead.
 
 ### Lab 2: Dijkstra’s Algorithm Performance
 An exploration of how graph representation and priority queue selection affect the performance of Dijkstra's algorithm.
@@ -27,7 +27,7 @@ An exploration of how graph representation and priority queue selection affect t
 ### Lab 3: Unbounded Knapsack (Dynamic Programming)
 Implementation of the Unbounded Knapsack problem using Dynamic Programming.
 *   **Features:** Recursive definition, subproblem dependency graph visualization, and an iterative Bottom-Up solution.
-*   **Efficiency:** $O(n \times C)$ time complexity and $O(C)$ space complexity.
+*   **Efficiency:** $O(n \times C)$ time complexity and $O(C)$ space complexity for bottom-up DP approach.
 
 ---
 
