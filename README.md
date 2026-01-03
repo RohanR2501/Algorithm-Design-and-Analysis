@@ -5,9 +5,9 @@ This repository contains the implementation, empirical testing, and theoretical 
 **Team Members:** Perrin, Rohan, Alexa
 
 ## Repository Structure
-*   **`lab1/`**: **Integration of Merge Sort & Insertion Sort.** Analysis of a hybrid sorting algorithm and finding the optimal threshold $S$.
-*   **`lab2/`**: **Dijkstra’s Algorithm.** Comparison between Adjacency Matrix (Array PQ) and Adjacency List (Binary Heap) implementations.
-*   **`lab3/`**: **Unbounded Knapsack Problem.** Solving the knapsack problem using a Bottom-Up Dynamic Programming approach.
+*   **`lab1/mergeSort.ipynb`**: **Integration of Merge Sort & Insertion Sort.** Analysis of a hybrid sorting algorithm and finding the optimal threshold $S$.
+*   **`lab2/dijkstraAlgorithm.ipynb`**: **Dijkstra’s Algorithm.** Comparison between Adjacency Matrix (Array PQ) and Adjacency List (Binary Heap) implementations.
+*   **`lab3/dynamicProgram.ipynb`**: **Unbounded Knapsack Problem.** Solving the knapsack problem using a Bottom-Up Dynamic Programming approach.
 
 ---
 
