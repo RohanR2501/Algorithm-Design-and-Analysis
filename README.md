@@ -31,7 +31,7 @@ Implementation of the Unbounded Knapsack problem using Dynamic Programming.
 
 ---
 
-## 🚀 How to Run
+## How to Run
 
 Since these projects are provided as **Jupyter Notebooks (`.ipynb`)**, you can run them using one of the following methods:
 
