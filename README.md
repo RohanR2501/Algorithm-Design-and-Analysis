@@ -1,14 +1,68 @@
-# SC2001-Lab-Projects
-## SC2001 Project 1 — Hybrid Mergesort + Insertion Sort
+# SC2001 - Algorithm Design and Analysis
 
-### Introduction
-In Mergesort, when the sizes of subarrays are small, the overhead of many recursive
-calls makes the algorithm rather inefficient. Therefore in real use cases, we often combine
-Mergesort with Insertion Sort to come up with a hybrid sorting algorithm for better efficiency.
+This repository contains the implementation, empirical testing, and theoretical analysis for three major laboratory projects. The work focuses on algorithm optimization, graph theory, and dynamic programming.
 
-The idea is to set a small integer **S** as a threshold for the size of subarrays.
-Once the size of a subarray in a recursive call of Mergesort is less than or equal to S,
-the algorithm will switch to Insertion Sort, which is efficient for smaller-sized inputs.
+**Team Members:** Perrin, Rohan, Alexa
 
-This project implements and analyzes such a hybrid algorithm, and compares it with
-the original Mergesort.
+## 📁 Repository Structure
+*   **`lab1/`**: **Integration of Merge Sort & Insertion Sort.** Analysis of a hybrid sorting algorithm and finding the optimal threshold $S$.
+*   **`lab2/`**: **Dijkstra’s Algorithm.** Comparison between Adjacency Matrix (Array PQ) and Adjacency List (Binary Heap) implementations.
+*   **`lab3/`**: **Unbounded Knapsack Problem.** Solving the knapsack problem using a Bottom-Up Dynamic Programming approach.
+
+---
+
+## 🧪 Project Overviews
+
+### Lab 1: Hybrid Sorting Algorithm
+This project implements a hybrid of Merge Sort and Insertion Sort. The algorithm switches to Insertion Sort when the subarray size is less than or equal to a threshold $S$.
+*   **Key Objective:** Determine the optimal $S$ that minimizes key comparisons and CPU time for input sizes up to 10 million.
+*   **Result:** Empirical results validate the $O(n \log n)$ complexity while showing significant real-world speedups on small subarrays due to lower overhead.
+
+### Lab 2: Dijkstra’s Algorithm Performance
+An exploration of how graph representation and priority queue selection affect the performance of Dijkstra's algorithm.
+*   **Implementation A:** Adjacency Matrix + Array PQ — $O(V^2)$.
+*   **Implementation B:** Adjacency List + Binary Heap — $O((V+E) \log V)$.
+*   **Analysis:** Comparison across varying edge densities (Sparse to Dense) to identify the crossover point where one implementation outperforms the other.
+
+### Lab 3: Unbounded Knapsack (Dynamic Programming)
+Implementation of the Unbounded Knapsack problem using Dynamic Programming.
+*   **Features:** Recursive definition, subproblem dependency graph visualization, and an iterative Bottom-Up solution.
+*   **Efficiency:** $O(n \times C)$ time complexity and $O(C)$ space complexity.
+
+---
+
+## 🚀 How to Run
+
+Since these projects are provided as **Jupyter Notebooks (`.ipynb`)**, you can run them using one of the following methods:
+
+### Option 1: VS Code (Recommended)
+1.  Install the **Jupyter** extension in VS Code.
+2.  Open any `.ipynb` file from the `lab` folders.
+3.  Select your Python kernel (top right) and click **Run All**.
+
+### Option 2: Jupyter Lab / Notebook
+1.  Install Jupyter:
+    ```bash
+    pip install jupyterlab
+    ```
+2.  Launch the interface:
+    ```bash
+    jupyter lab
+    ```
+3.  Navigate to the desired notebook and run the cells sequentially.
+
+### Option 3: Google Colab
+1.  Upload the `.ipynb` file to [Google Colab](https://colab.research.google.com/).
+2.  Run the cells in the cloud environment.
+
+---
+
+## 🛠️ Requirements
+The following Python libraries are required to view the plots and run the analyses:
+
+```bash
+pip install matplotlib numpy
+```
+
+*   **NumPy**: Used for data generation and array manipulations.
+*   **Matplotlib**: Used for generating the empirical analysis graphs (log-log plots, runtime comparisons).
